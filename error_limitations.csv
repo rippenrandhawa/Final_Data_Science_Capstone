@@ -1,0 +1,9 @@
+issue,evidence,impact,improvement
+Temporal distribution shift,Test prevalence is 38.45% vs 5.57% train,Calibration and threshold stability are weak,"Rolling validation, campaign dates, recalibration"
+False negatives,"Tuned test model misses 1,050 of 2,376 subscribers",Lost campaign opportunities,Adjust threshold based on capacity/cost; improve features
+False positives,"Tuned model selects 1,283 non-subscribers",Wasted calls and customer fatigue,"Use economics, consent and suppression rules"
+Feature leakage,Duration known only after call,Inflated offline scores,Prediction-time feature contract
+Repeated clients possible,UCI notes multiple contacts may occur; no client ID,Rows may not be independent,Add anonymised client key and grouped split
+Historic geography/time,"Portuguese campaigns, 2008–2010",Limited current and geographic validity,Collect current local campaign data
+No causal design,Observational campaign data,Associations do not prove interventions work,Randomised or quasi-experimental tests
+Fairness scope,Only age available for subgroup audit,Incomplete fairness assessment,Legal review and approved group monitoring

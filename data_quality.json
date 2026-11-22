@@ -1,0 +1,15 @@
+{
+  "rows": 41188,
+  "raw_columns": 21,
+  "clean_columns": 28,
+  "exact_duplicates": 12,
+  "missing_cells_raw": 0,
+  "unknown_category_cells": 12718,
+  "target_positive": 4640,
+  "target_rate_pct": 11.265417111780131,
+  "age_min": 17,
+  "age_max": 98,
+  "duration_median_seconds": 180.0,
+  "ordered_by_date": true,
+  "period": "May 2008\u2013November 2010 (UCI documentation)"
+}

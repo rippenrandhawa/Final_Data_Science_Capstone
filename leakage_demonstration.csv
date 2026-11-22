@@ -1,0 +1,3 @@
+model,roc_auc,pr_auc
+Deployable model (duration excluded),0.6345383672822537,0.5133059792651181
+Diagnostic leakage model (duration included),0.6969914988255772,0.5689230825548992

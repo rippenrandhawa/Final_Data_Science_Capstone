@@ -1,0 +1,23 @@
+{
+  "selected_model": "Histogram gradient boosting",
+  "threshold": 0.10075361558734351,
+  "raw_rows": 41188,
+  "overall_positive_rate_pct": 11.265417111780131,
+  "train_rows": 28831,
+  "validation_rows": 6178,
+  "test_rows": 6179,
+  "test_positive_rate_pct": 38.4528240815666,
+  "test_roc_auc": 0.6345383672822537,
+  "test_pr_auc": 0.5133059792651181,
+  "test_default_f1": 0.13013698630136986,
+  "test_tuned_precision": 0.508240705251054,
+  "test_tuned_recall": 0.5580808080808081,
+  "test_tuned_f1": 0.5319959879638917,
+  "test_brier": 0.28457808413529573,
+  "top20_lift": 1.3455680284627654,
+  "top20_subscribers": 639,
+  "top20_contacts": 1235,
+  "test_subscribers": 2376,
+  "leakage_roc_auc": 0.6969914988255772,
+  "leakage_pr_auc": 0.5689230825548992
+}

@@ -1,0 +1,29 @@
+field,dtype,role,definition,model_use
+age,int64,Source feature,Client age,Candidate pre-call predictor
+job,object,Source feature,Job category,Candidate pre-call predictor
+marital,object,Source feature,Marital status,Candidate pre-call predictor
+education,object,Source feature,Education category,Candidate pre-call predictor
+default,object,Source feature,Credit in default?,Candidate pre-call predictor
+housing,object,Source feature,Housing loan?,Candidate pre-call predictor
+loan,object,Source feature,Personal loan?,Candidate pre-call predictor
+contact,object,Source feature,Contact communication type,Candidate pre-call predictor
+month,object,Source feature,Last contact month,Candidate pre-call predictor
+day_of_week,object,Source feature,Last contact weekday,Candidate pre-call predictor
+duration,int64,Source feature,"Last call duration in seconds; post-call leakage, excluded from deployable model",Excluded — post-call leakage
+campaign,int64,Source feature,Contacts during current campaign including current contact,Candidate pre-call predictor
+pdays,int64,Source feature,Days since previous campaign contact; 999 means not previously contacted,Candidate pre-call predictor
+previous,int64,Source feature,Contacts before current campaign,Candidate pre-call predictor
+poutcome,object,Source feature,Previous campaign outcome,Candidate pre-call predictor
+emp_var_rate,float64,Source feature,Employment variation rate,Candidate pre-call predictor
+cons_price_idx,float64,Source feature,Consumer price index,Candidate pre-call predictor
+cons_conf_idx,float64,Source feature,Consumer confidence index,Candidate pre-call predictor
+euribor3m,float64,Source feature,Three-month Euribor rate,Candidate pre-call predictor
+nr_employed,float64,Source feature,Number of employees (quarterly indicator),Candidate pre-call predictor
+subscribed,int64,Target,Binary target engineered from y,Excluded — target
+age_band,object,Engineered,Descriptive age band; excluded from model to avoid duplicating age,Excluded — audit/descriptive
+previously_contacted,int64,Engineered,1 when pdays != 999,Candidate pre-call predictor
+days_since_previous,float64,Engineered,pdays with 999 replaced by missing,Candidate pre-call predictor
+contact_pressure,int64,Engineered,campaign + previous,Candidate pre-call predictor
+has_credit_obligation,int64,Engineered,1 if housing or personal loan is yes,Candidate pre-call predictor
+unknown_field_count,int64,Engineered,Count of categorical fields equal to unknown,Candidate pre-call predictor
+source_row,int64,Engineered,Original chronological row number,Excluded — audit/descriptive

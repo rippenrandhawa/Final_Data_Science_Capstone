@@ -1,0 +1,7 @@
+{
+  "poutcome_chi_square": 4230.5237978319765,
+  "poutcome_p_value": 0.0,
+  "poutcome_dof": 2,
+  "campaign_contacts_spearman_rho": -0.06366813979420918,
+  "campaign_contacts_p_value": 2.8910138996596117e-38
+}

@@ -1,0 +1,70 @@
+FINAL DATA SCIENCE CAPSTONE — QUALITY ASSURANCE
+====================================================================================================
+[PASS] required: README.md
+[PASS] required: requirements.txt
+[PASS] required: data/raw/bank_marketing.zip
+[PASS] required: data/raw/bank-additional/bank-additional-full.csv
+[PASS] required: data/processed/bank_marketing_cleaned.csv
+[PASS] required: notebooks/Final_Data_Science_Capstone.ipynb
+[PASS] required: scripts/capstone_analysis.py
+[PASS] required: models/term_deposit_targeting_model.joblib
+[PASS] required: report/Final_Data_Science_Capstone_Report.docx
+[PASS] required: presentation/Final_Data_Science_Capstone_Presentation.pptx
+[PASS] required: references/dataset_source.md
+[PASS] raw dimensions — (41188, 21)
+[PASS] clean rows preserved — 41188
+[PASS] target count — 4640
+[PASS] duration retained in clean audit data
+[PASS] selected model summary
+[PASS] duration excluded from fitted model input
+[PASS] table: capstone_problem_charter.csv
+[PASS] table: data_dictionary.csv
+[PASS] table: validation_model_comparison.csv
+[PASS] table: test_model_performance.csv
+[PASS] table: test_scored_predictions.csv
+[PASS] table: cumulative_gains.csv
+[PASS] table: age_band_model_audit.csv
+[PASS] table: insights_table.csv
+[PASS] table: recommendation_matrix.csv
+[PASS] table: error_limitations.csv
+[PASS] 13 charts — 13
+[PASS] chart >=150 DPI: 10_feature_importance.png
+[PASS] chart >=150 DPI: 08_confusion_matrix.png
+[PASS] chart >=150 DPI: 12_leakage_demo.png
+[PASS] chart >=150 DPI: 06_model_comparison.png
+[PASS] chart >=150 DPI: 13_age_band_audit.png
+[PASS] chart >=150 DPI: 09_cumulative_gains.png
+[PASS] chart >=150 DPI: 03_job_conversion.png
+[PASS] chart >=150 DPI: 11_probability_errors.png
+[PASS] chart >=150 DPI: 04_previous_outcome.png
+[PASS] chart >=150 DPI: 01_target_balance.png
+[PASS] chart >=150 DPI: 05_contact_pressure.png
+[PASS] chart >=150 DPI: 07_roc_pr_curves.png
+[PASS] chart >=150 DPI: 02_month_conversion.png
+[PASS] notebook 27 cells — 27
+[PASS] notebook 14 code cells — 14
+[PASS] all code cells executed — 14
+[PASS] notebook zero errors — 0
+[PASS] report opens — 173
+[PASS] report 22 sections — 23
+[PASS] report 13 figures — 13
+[PASS] report metrics consistent
+[PASS] presentation 12 slides — 12
+[PASS] presentation metrics consistent
+[PASS] presentation leakage control
+[PASS] syntax: capstone_analysis.py
+[PASS] syntax: build_report.py
+[PASS] syntax: build_presentation.py
+[PASS] syntax: build_notebook.py
+[PASS] syntax: qa_project.py
+[PASS] syntax: build_documentation.py
+[PASS] README DOI
+[PASS] README limitation
+[PASS] README report name
+[PASS] README presentation name
+[PASS] hash manifest
+====================================================================================================
+AUTOMATED RESULT: 63/63 checks passed
+
+Office validation: DOCX and PPTX were opened and converted to PDF with LibreOffice.
+Deployment status: controlled-pilot prototype only; not authorised for autonomous targeting.

@@ -1,0 +1,11 @@
+element,definition
+Problem statement,"Outbound calls are costly; rank prospects by likelihood of term-deposit subscription before a call, without using post-call information."
+Primary objective,Build and evaluate a leakage-aware binary classifier that improves subscriber capture per contact.
+Business user,Campaign manager and marketing analytics team.
+Prediction unit,One campaign record / client contact record.
+Prediction timing,Immediately before the outbound call.
+Target,subscribed = 1 if y = yes; otherwise 0.
+In scope,"Data quality, EDA, feature engineering, chronological validation, classification, ranking lift, error/subgroup analysis, recommendations."
+Out of scope,"Causal campaign uplift, profit optimization, customer lifetime value, real-time deployment, decisions based on call duration."
+Success criteria,"Beat prevalence baseline on ROC-AUC, PR-AUC and top-20% lift; document calibration/drift and subgroup risks."
+Expected outcome,"A reproducible prototype and decision framework, not an autonomous production system."

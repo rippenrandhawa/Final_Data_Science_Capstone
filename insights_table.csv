@@ -1,0 +1,11 @@
+business_area,finding,evidence,business_meaning,evidence_type
+Target balance,Only 11.2654171117801311652328877% of all records subscribe.,"4,640 positives of 41,188",Accuracy alone is misleading; ranking and PR metrics are required.,Observed
+Temporal drift,Subscription prevalence changes sharply across chronological splits.,Train 5.57%; validation 10.65%; test 38.45%,A static model is poorly calibrated across campaign periods; monitoring and retraining are mandatory.,Observed
+Model discrimination,The selected histogram gradient boosting model is better than random but modest.,Test ROC-AUC 0.635; PR-AUC 0.513 vs test prevalence 0.385,"Useful for prioritisation, not automatic rejection or approval.",Observed
+Targeting lift,The top-scored 20% of test records contain 639 subscribers.,26.89% of test subscribers captured; lift 1.35,Ranking can concentrate likely responders when call capacity is limited.,Observed
+Threshold trade-off,Validation-tuned threshold 0.101 balances precision and recall.,Precision 0.508; recall 0.558; F1 0.532,"Threshold must be set from campaign economics, not F1 alone.",Observed
+Leakage,Using call duration improves apparent scores but violates prediction timing.,ROC-AUC rises from 0.635 to 0.697,A duration-based pre-call model would be invalid and misleading.,Observed
+Previous outcomes,A prior successful campaign is strongly associated with subscription.,Previous-success conversion 65.11%; chi-square p < 0.001,"Prior engagement is a useful ranking signal, but not proof of causal persistence.",Observed association
+Contact channel,Cellular-contact records convert more often than telephone records.,Cellular 14.74%; telephone 5.23%,Could reflect campaign period/client mix; channel experiments are needed.,Observed association
+Contact pressure,More current-campaign contacts are negatively associated with subscription.,"Spearman rho -0.064, p < 0.001",Repeated contacts may signal hard-to-convert prospects or fatigue.,Observed association
+Age audit,Precision/recall and selection rates vary across age bands.,Recall ranges from 0.439 to 0.711; older bands have high selection/FPR,Human oversight and subgroup monitoring are needed to prevent unfair targeting.,Observed
